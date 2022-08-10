@@ -1,0 +1,28 @@
+h1 { 
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.exercise-form, 
+.user-form {
+  border: 2px black solid;
+  border-radius: 5px;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 22px;
+  background-color: lightblue;
+}
+
+input {
+ margin-bottom: 10px;
+}
+
+p { 
+  text-align: center;
+  font-size: 22px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise Tracker</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <script defer src="public/form.js"></script>
+  </head>
+  <body>
+    <h1>Exercise Tracker</h1>
+    <div class="form-container">
+      <div class="user-form">
+        <div>Create a new user</div>
+        <form method="post" action="/api/users">
+          <input type="text" name="username"
+            placeholder="Enter a username">
+          <input type="submit">
+        </form>
+      </div>
+      <div class="exercise-form">
+        <div>Add exercises</div>
+        <form method="post" id="exercise-form">
+          <input type="text" placeholder="User ID (required)"
+            name="_id" id="id-input">
+          <br>
+          <input type="text" placeholder="Description (required)"
+          name="description">
+          <br>
+          <input type="text"
+            placeholder="Duration in min (required)"
+            name="duration">
+          <br>
+          <input type="text" placeholder="Date (yyyy-mm-dd)"
+            name="date">
+          <br>
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+    <p><strong>List of all users:</strong> found at [current url]/api/users</p>
+    <p><strong>User's exercise log:</strong> found at [current url]/api/users/<strong>id_of_user</strong>/logs?[from][to][limit]<br>
+from, to, and limit are optional parameters where from and to are a range of dates
+    (yyyy-mm-dd) of exercises to include and limit is a maximum number of entries to
+    include.</p>
+  </body>
+</html>

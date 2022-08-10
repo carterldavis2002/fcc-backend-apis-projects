@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>URL Shortener Microservice</title>
+    <link rel="stylesheet" href="public/styles.css">
+  </head>
+  <body>
+    <h1>URL Shortener Microservice</h1>
+    <p>Enter a URL and press "Submit" to generate a short URL
+    which can be used to redirect to the entered URL.</p>
+    <form method="post" action="/api/shorturl">
+      <label>URL:</label>
+      <input type="text" name="url" 
+        placeholder="http://www.youtube.com">
+      <input type="submit">
+    </form>
+    <p><strong>Input: </strong>[current url]/api/shorturl/2</p>
+    <p><strong>Redirects to: </strong>http://www.youtube.com</p>
+  </body>
+</html>

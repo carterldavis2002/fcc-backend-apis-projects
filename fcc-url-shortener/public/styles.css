@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  border: 2px black solid;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px 0;
+}
+
+p {
+  text-align: center;
+  font-size: 22px;
+}
+
+input, 
+label {
+  font-size: 22px;
+  padding: 10px;
+  margin: 5px;
+}

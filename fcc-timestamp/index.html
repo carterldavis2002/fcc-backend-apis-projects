@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./public/styles.css">
+  <title>Timestamp Microservice</title>
+</head>
+<body>
+  <h1>Timestamp Microservice</h1>
+  <p>Enter a date in either milliseconds since the
+  UNIX epoch or using year, month, and day (month can
+  be number or name). API returns object with
+  milliseconds of entered date from UNIX epoch and a
+  string containing day of the week, day of the month, month, year, and time to represent entered date.</p>
+  <h2>Example Requests</h2>
+  <p><strong>Input:</strong> [current url]/api/1454457600000</p>
+  <p><strong>Output:</strong> {"unix":1454457600000,"utc":"Wed, 03 Feb 2016 00:00:00 GMT"}</p>
+  <p>-------------------------------------</p>
+  <p><strong>Input:</strong> [current url]/api/June 2, 2017</p>
+  <p><strong>Output:</strong> {"unix":1496361600000,"utc":"Fri, 02 Jun 2017 00:00:00 GMT"}</p>
+</body>
+</html>

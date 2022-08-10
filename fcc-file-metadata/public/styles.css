@@ -1,0 +1,21 @@
+form {
+  text-align: center;
+  border: 2px black solid;
+  max-width: 500px;
+  margin: auto;
+}
+
+input {
+  margin: 8px;
+  padding: 8px 25px;
+  font-size: 22px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  text-align: center;
+}
